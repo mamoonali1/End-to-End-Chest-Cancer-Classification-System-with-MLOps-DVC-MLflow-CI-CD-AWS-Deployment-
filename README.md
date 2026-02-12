@@ -20,29 +20,7 @@
 
 - [MLflow tutorial](https://youtube.com/playlist?list=PLkz_y24mlSJZrqiZ4_cLUiP0CBN5wFmTb&si=zEp_C8zLHt1DzWKK)
 
-##### cmd
 - mlflow ui
-
-
-### dagshub
-[dagshub](https://dagshub.com/)
-
-MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/chest-Disease-Classification-MLflow-DVC.mlflow \
-MLFLOW_TRACKING_USERNAME=entbappy \
-MLFLOW_TRACKING_PASSWORD=6824692c47a4545eac5b10041d5c8edbcef0 \
-python script.py
-
-Run this to export as env variables:
-
-```bash
-
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/chest-Disease-Classification-MLflow-DVC.mlflow
-
-export MLFLOW_TRACKING_USERNAME=entbappy 
-
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9353c5b10041d5c8edbcef0
-
-```
 
 
 
@@ -51,23 +29,6 @@ export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9353c5b10041d5c8edbcef0
 1. dvc init
 2. dvc repro
 3. dvc dag
-
-
-## About MLflow & DVC
-
-MLflow
-
- - Its Production Grade
- - Trace all of your expriements
- - Logging & taging your model
-
-
-DVC 
-
- - Its very lite weight for POC only
- - lite weight expriements tracker
- - It can perform Orchestration (Creating Pipelines)
-
 
 
 # AWS-CICD-Deployment-with-Github-Actions
@@ -92,7 +53,7 @@ DVC
 	4. Pull Your image from ECR in EC2
 
 	5. Lauch your docker image in EC2
-	
+
 
 	#Policy:
 
@@ -102,6 +63,7 @@ DVC
 
 	
 ## 3. Create ECR repo to store/save docker image
+
     - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/chicken
 
 	
@@ -115,6 +77,7 @@ DVC
 	sudo apt-get update -y
 
 	sudo apt-get upgrade
+
 	
 	#required
 
